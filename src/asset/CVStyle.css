@@ -1,0 +1,105 @@
+html{
+  scroll-behavior: smooth;
+} 
+
+body{
+  background-color: #fbfbfb;
+  margin: 0px 80px;
+  padding: 40px;
+  font-family: sans-serif;
+}
+
+.top{
+  position: absolute;
+  left: 180px;
+  top: 40px;
+  color: #303030;
+  font-weight: 900;
+}
+
+.nav li{
+  color: #303030;
+  font-weight: bolder;
+  display: inline-block;
+}
+
+.nav #logo{
+  height: 60px;
+}
+
+.main{
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.col{
+  width: 100%;
+}
+
+.a{
+  overflow: hidden;
+  margin: auto;
+  padding: 20px 0;
+}
+
+#poto{
+  width: 80%; 
+  float: right;
+}
+
+#text-a{
+  color: #ff931f;
+}
+
+#text-b{
+  font-size: 30px;
+  font-weight: bolder;
+  line-height: 1.6;
+}
+
+#text-c{
+  font-size: 20px;
+}
+
+.button{
+  background-color: #ff931f;
+  padding:  10px;
+  color: black;
+  font-weight: bolder;
+  width: max-content;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.button:hover{
+  background-color: black;
+  color: #ff931f;
+}
+
+.about{
+  text-align: center;
+  margin: 100px;
+  padding: 60px;
+}
+
+.icon{
+  width: 60px;
+}
+
+.icona{
+  width: 30px;
+}
+
+.contact{
+  text-align: center;
+}
+
+.identity{
+  margin: auto;
+  padding: 10px 0;
+}
+
+td{
+  padding: 10px 20px;
+}
