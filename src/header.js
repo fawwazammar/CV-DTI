@@ -1,22 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
-  // const Header = (prop) => {
-  const [nama, setNama] = useState('Fawwaz');
-  // const { nama } = props;
+  const listMenu = ['home', 'portofolio'];
   return (
-    <>
-      <h2>Header</h2>
-      <h3>{`Nama saya ${nama}`}</h3>
-      <button
-        type="submit"
-        onClick={() => {
-          setNama('Ammar');
-        }}
-      >
-        Ganti Nama
-      </button>
-    </>
+    <div className="header">
+      {listMenu.map((name) => {
+        return (
+          <Link to={`/${name}`} key={name}>
+            <div className="menu">{name}</div>
+          </Link>
+        );
+      })}
+    </div>
   );
 };
 

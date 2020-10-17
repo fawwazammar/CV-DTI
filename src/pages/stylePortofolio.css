@@ -1,0 +1,16 @@
+.App {
+  background-color: #fbfbfb;
+  margin: 0px 80px;
+  padding: 40px;
+  font-family: sans-serif;
+  padding-top: 60px;
+}
+
+.portofolio {
+  margin-top: 40px;
+}
+
+.porto {
+  height: 200px;
+  margin-right: 20px;
+}
