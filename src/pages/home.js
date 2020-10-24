@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styleHome.css';
-import { man, information, call, calll, gmail } from '../asset';
+// import { man, information, call, calll, gmail } from '../asset';
+import { man, information, call } from '../asset';
 
 const Home = () => {
+  const [contact, setContact] = useState('082330625523');
+
   return (
     <div className="App">
       <div className="main">
@@ -37,10 +40,22 @@ const Home = () => {
           sendiri dan orang lain.
         </p>
       </div>
-      <div className="contact">
-        <img src={call} alt="contact" className="icon" />
-        <table className="identity">
-          <tr>
+      <div className="contact" id="contact">
+        <a
+          href="#contact"
+          onClick={() => {
+            return setContact(
+              contact === '082330625523'
+                ? 'fawwazammar87@gmail.com'
+                : '082330625523'
+            );
+          }}
+        >
+          <img src={call} alt="contact" className="icon" />
+        </a>
+        <p>{contact}</p>
+        {/* <table className="identity">
+          <tr id="email">
             <td>
               <img src={gmail} alt="contact" className="icona" />
             </td>
@@ -52,7 +67,7 @@ const Home = () => {
             </td>
             <td>+62 823 3062 5523</td>
           </tr>
-        </table>
+        </table> */}
       </div>
     </div>
   );
